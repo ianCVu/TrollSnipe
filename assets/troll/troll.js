@@ -22,9 +22,14 @@ const appendTrolls = setInterval(function() {
     }
   }, 760);
   troll.addEventListener("click", function() {
-    if (health === 0) {
-      troll.remove();
-      clearInterval(increaseCloseness);
-    } else
+    if (player.reloading === true) {
+      console.log("Reloading... please wait.");
+    } else {
+      health = health - 20;
+      if (health === 0) {
+        troll.remove();
+        clearInterval(increaseCloseness);
+      }
+    }
   });
 }, 10000);
