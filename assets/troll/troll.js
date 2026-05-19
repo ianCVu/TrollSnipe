@@ -28,7 +28,7 @@ const appendTrolls = setInterval(function() {
         window.close();
       }
     }
-  }, 1200);
+  }, 4500);
   troll.addEventListener("click", function() {
     if (player.reloading === true) {
       console.log("Reloading... please wait.");
