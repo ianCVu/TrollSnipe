@@ -1,6 +1,7 @@
 import { player } from "../player.js";
 const appendTrolls = setInterval(function() {
   var troll = document.createElement("img");
+  troll.src = "./troll.png";
   troll.height = 500;
   troll.width = 500;
   troll.style.position = "fixed";
