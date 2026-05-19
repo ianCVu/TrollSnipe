@@ -1,4 +1,4 @@
-import { player } from "../player.js";
+import { player } from "./assets/player.js";
 document.addEventListener("click", function() {
   document.getElementById("shootSound").play();
   player.reloading = true;
@@ -9,13 +9,13 @@ document.addEventListener("click", function() {
 const appendTrolls = setInterval(function() {
   var troll = document.createElement("img");
   troll.src = "./assets/troll/troll.png";
-  troll.height = 100;
-  troll.width = 100;
+  troll.height = 50;
+  troll.width = 50;
   troll.style.position = "fixed";
   troll.style.left = Math.floor(Math.random() * window.innerWidth) - 500 + "px";
   troll.style.bottom = "36px";
   var health = 20;
-  var closeness = 100;
+  var closeness = 50;
   var increaseCloseness = setInterval(function() {
     closeness = closeness + 100;
     troll.width = closeness;
@@ -28,7 +28,7 @@ const appendTrolls = setInterval(function() {
         window.close();
       }
     }
-  }, 760);
+  }, 1200);
   troll.addEventListener("click", function() {
     if (player.reloading === true) {
       console.log("Reloading... please wait.");
@@ -41,4 +41,4 @@ const appendTrolls = setInterval(function() {
     }
   });
   document.body.appendChild(troll);
-}, 10000);
+}, 3900);
