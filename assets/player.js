@@ -13,3 +13,5 @@ window.addEventListener("mousemove", function(event) {
   aim.style.top = event.clientY - 50 + "px";
 });
 document.body.appendChild(aim)
+
+export { player }
