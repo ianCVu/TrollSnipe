@@ -8,7 +8,7 @@ document.addEventListener("click", function() {
 });
 const appendTrolls = setInterval(function() {
   var troll = document.createElement("img");
-  troll.src = "./troll.png";
+  troll.src = "./assets/troll/troll.png";
   troll.height = 500;
   troll.width = 500;
   troll.style.position = "fixed";
