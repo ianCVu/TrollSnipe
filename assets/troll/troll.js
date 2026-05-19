@@ -5,7 +5,7 @@ const appendTrolls = setInterval(function() {
   troll.height = 500;
   troll.width = 500;
   troll.style.position = "fixed";
-  troll.style.left = Math.floor(Math.random() * window.innerWidth - 500) + "px";
+  troll.style.left = Math.floor(Math.random() * window.innerWidth) - 500 + "px";
   troll.style.bottom = "36px";
   var health = 20;
   var closeness = 500;
@@ -26,7 +26,7 @@ const appendTrolls = setInterval(function() {
     if (player.reloading === true) {
       console.log("Reloading... please wait.");
     } else {
-      health = health - player.damage;
+      health = health - 5;
       if (health === 0) {
         troll.remove();
         clearInterval(increaseCloseness);
