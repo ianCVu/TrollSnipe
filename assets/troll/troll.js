@@ -1,12 +1,14 @@
 import { player } from "../player.js";
 const appendTrolls = setInterval(function() {
   var troll = document.createElement("img");
-  troll.height = "500";
-  troll.width = "500";
+  troll.height = 500;
+  troll.width = 500;
   var health = 20;
   var closeness = 500;
   var increaseCloseness = setInterval(function() {
     closeness = closeness + 100;
+    troll.width = closeness;
+    troll.height = closeness;
     if (closeness === 1500) {
       troll.remove();
       player.health = player.health - 100;
