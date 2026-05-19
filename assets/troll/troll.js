@@ -1,4 +1,11 @@
 import { player } from "../player.js";
+document.addEventListener("click", function() {
+  document.getElementById("shootSound").play();
+  player.reloading = true;
+  setTimeout(function() {
+    player.reloading = false;
+  }, 970);
+});
 const appendTrolls = setInterval(function() {
   var troll = document.createElement("img");
   troll.src = "./troll.png";
