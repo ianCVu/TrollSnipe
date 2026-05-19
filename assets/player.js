@@ -12,11 +12,4 @@ window.addEventListener("mousemove", function(event) {
   aim.style.left = event.clientX - 50 + "px";
   aim.style.top = event.clientY - 50 + "px";
 });
-document.body.appendChild(aim);
-document.addEventListener("click", function() {
-  document.getElementById("shootSound").play();
-  player.reloading = true;
-  setTimeout(function() {
-    player.reloading = false;
-  }, 970);
-});
+document.body.appendChild(aim)
