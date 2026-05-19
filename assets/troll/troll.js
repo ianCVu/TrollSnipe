@@ -26,7 +26,7 @@ const appendTrolls = setInterval(function() {
     if (player.reloading === true) {
       console.log("Reloading... please wait.");
     } else {
-      health = health - 20;
+      health = health - player.damage;
       if (health === 0) {
         troll.remove();
         clearInterval(increaseCloseness);
