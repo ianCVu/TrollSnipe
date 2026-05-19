@@ -32,4 +32,5 @@ const appendTrolls = setInterval(function() {
       }
     }
   });
+  document.body.appendChild(troll);
 }, 10000);
