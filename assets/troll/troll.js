@@ -20,7 +20,7 @@ const appendTrolls = setInterval(function() {
     closeness = closeness + 100;
     troll.width = closeness;
     troll.height = closeness;
-    if (closeness === 1500) {
+    if (closeness === 900) {
       troll.remove();
       player.health = player.health - 100;
       clearInterval(increaseCloseness);
