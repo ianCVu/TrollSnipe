@@ -9,13 +9,13 @@ document.addEventListener("click", function() {
 const appendTrolls = setInterval(function() {
   var troll = document.createElement("img");
   troll.src = "./assets/troll/troll.png";
-  troll.height = 500;
-  troll.width = 500;
+  troll.height = 100;
+  troll.width = 100;
   troll.style.position = "fixed";
   troll.style.left = Math.floor(Math.random() * window.innerWidth) - 500 + "px";
   troll.style.bottom = "36px";
   var health = 20;
-  var closeness = 500;
+  var closeness = 100;
   var increaseCloseness = setInterval(function() {
     closeness = closeness + 100;
     troll.width = closeness;
