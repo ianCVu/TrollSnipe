@@ -1,8 +1,7 @@
-import { gun } from "../gun.js";
 const player = {
   "health" : 1000,
   "reloading" : false,
-  "damage" : gun.damage
+  "damage" : 5
 };
 const aim = document.createElement("img");
 aim.width = 100;
